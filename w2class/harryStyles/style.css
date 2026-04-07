@@ -1,0 +1,19 @@
+p{
+    color:yellow; 
+    
+}
+
+h1{
+    color:tomato;
+    font-size: 75px;
+}
+
+#main-container{
+    background-color:aquamarine
+}
+
+.pClass{
+    font-size:30px;
+    background-color: violet;
+    color:cadetblue;
+}
