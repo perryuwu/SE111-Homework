@@ -1,0 +1,65 @@
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: blanchedalmond;
+}
+
+#main-container{
+    border: 5px solid black;
+    width:1000px;
+    height: 800px;
+    background-color: salmon;
+}
+
+#header{
+    height:130px;
+    border: 3px dotted paleturquoise;
+    text-align: center;
+}
+#nav-bar{
+    height:50px;
+    text-align: center;
+    border-top:2px solid whitesmoke;
+    border-bottom:2px solid whitesmoke;
+    padding-top:25px;
+}
+
+.nav-btn{
+    border: 2px solid black;
+    padding:10px;
+}
+
+#content{
+    height:250px;
+    width:650px;
+    text-align: center;
+    margin: auto;
+}
+
+#lermispum{
+    font-size: 20px;
+    border:2px double burlywood
+}
+
+#Music-Page{
+    border: 2px groove gray;
+}
+
+#musicp{
+    font-size: 15px;
+    border:2px double burlywood;
+    color:darkblue;
+}
+#Favorite-Artists{
+    text-align: center;
+    
+}
+#list{
+   
+    border-left: 5px solid purple;
+    border-right: 5px solid purple;
+    list-style-position: inside;
+
+
+}
