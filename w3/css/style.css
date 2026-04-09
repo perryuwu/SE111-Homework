@@ -17,6 +17,10 @@ body{
     border: 3px dotted paleturquoise;
     text-align: center;
 }
+#header:hover{
+font-size:30px;
+}
+
 #nav-bar{
     height:50px;
     text-align: center;
@@ -29,7 +33,12 @@ body{
     border: 2px solid black;
     padding:10px;
 }
-
+.nav-btn:link{
+    background-color: greenyellow;
+}
+.nav-btn:visited{
+    background-color: white;
+}
 #content{
     height:250px;
     width:650px;
