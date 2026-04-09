@@ -58,7 +58,14 @@ body{
 
 #lermispum{
     font-size: 20px;
-    border:2px double burlywood
+    border:2px double burlywood;
+
+    animation-name: moving  ;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    font-family: "Petit Formal Script";
 }
 
 #Music-Page{
@@ -125,5 +132,27 @@ body{
     }
     100%{
         background-color: darkmagenta;
+    }
+}
+
+@keyframes moving{
+    0%{
+        transform: translate(10px,10px)
+
+    }
+    20%{
+        transform: rotate(275deg);
+        transform: translate(-10px,10px);
+    }
+    30%{
+        transform: rotate(-180deg);
+        transform: scale(2);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: translate(10px,10px);
+        transform: rotate(180deg)
     }
 }
