@@ -3,6 +3,11 @@ body{
     justify-content: center;
     height: 100vh;
     background-color: blanchedalmond;
+    
+    animation-name: perct;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #main-container{
@@ -16,9 +21,14 @@ body{
     height:130px;
     border: 3px dotted paleturquoise;
     text-align: center;
+
+    animation-name: colorChange;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 #header:hover{
-font-size:30px;
+    font-size:30px;
 }
 
 #nav-bar{
@@ -71,4 +81,49 @@ font-size:30px;
     list-style-position: inside;
 
 
+}
+@keyframes colorChange{
+    from{
+        background-color:red;
+    }    
+    to{
+        background-color:blueviolet;
+    }
+    
+}
+
+@keyframes perct{
+    0%{
+        background-color: thistle;
+    }
+    10%{
+        background-color: violet;
+    }
+    20%{
+        background-color:royalblue;
+    }
+    30%{
+        background-color:slateblue;
+    }
+    40%{
+        background-color:rebeccapurple
+    }
+    50%{
+        background-color:blue
+    }
+    60%{
+        background-color:blueviolet
+    }
+    70%{
+       background-color:plum
+    }
+    80%{
+        background-color: purple;
+    }
+    90%{
+        background-color: orchid;
+    }
+    100%{
+        background-color: darkmagenta;
+    }
 }
