@@ -3,6 +3,11 @@ body{
     justify-content: center;
     height: 100vh;
     background-color: blanchedalmond;
+    
+    animation-name: perct;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #main-container{
@@ -16,7 +21,16 @@ body{
     height:130px;
     border: 3px dotted paleturquoise;
     text-align: center;
+
+    animation-name: colorChange;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
+#header:hover{
+    font-size:30px;
+}
+
 #nav-bar{
     height:50px;
     text-align: center;
@@ -29,7 +43,12 @@ body{
     border: 2px solid black;
     padding:10px;
 }
-
+.nav-btn:link{
+    background-color: greenyellow;
+}
+.nav-btn:visited{
+    background-color: white;
+}
 #content{
     height:250px;
     width:650px;
@@ -39,7 +58,14 @@ body{
 
 #lermispum{
     font-size: 20px;
-    border:2px double burlywood
+    border:2px double burlywood;
+
+    animation-name: moving  ;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    font-family: "Petit Formal Script";
 }
 
 #Music-Page{
@@ -62,4 +88,71 @@ body{
     list-style-position: inside;
 
 
+}
+@keyframes colorChange{
+    from{
+        background-color:red;
+    }    
+    to{
+        background-color:blueviolet;
+    }
+    
+}
+
+@keyframes perct{
+    0%{
+        background-color: thistle;
+    }
+    10%{
+        background-color: violet;
+    }
+    20%{
+        background-color:royalblue;
+    }
+    30%{
+        background-color:slateblue;
+    }
+    40%{
+        background-color:rebeccapurple
+    }
+    50%{
+        background-color:blue
+    }
+    60%{
+        background-color:blueviolet
+    }
+    70%{
+       background-color:plum
+    }
+    80%{
+        background-color: purple;
+    }
+    90%{
+        background-color: orchid;
+    }
+    100%{
+        background-color: darkmagenta;
+    }
+}
+
+@keyframes moving{
+    0%{
+        transform: translate(10px,10px)
+
+    }
+    20%{
+        transform: rotate(275deg);
+        transform: translate(-10px,10px);
+    }
+    30%{
+        transform: rotate(-180deg);
+        transform: scale(2);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: translate(10px,10px);
+        transform: rotate(180deg)
+    }
 }
