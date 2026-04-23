@@ -1,0 +1,24 @@
+.audiowide-regular {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+
+    font-family: "Audiowide";
+}
+
+#main-container{
+    color: white;
+    border: 8px solid yellow;
+    width:900px;
+    height: 1000px;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+}
