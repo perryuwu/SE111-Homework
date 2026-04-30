@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table ex | week 5</title>
+
+    <style>
+        table,tr,th,td{
+            border:1px dotted salmon;
+            padding: 5px;
+            text-align: center;
+          
+        }
+        tr:nth-child(even){
+            background-color: cornflowerblue;
+        }
+                tr:nth-child(even){
+            background-color: cornflowerblue;
+        }
+                tr:nth-child(even){
+            background-color: cornflowerblue;
+        }        tr:nth-child(odd){
+            background-color: green;
+        }
+        .spe{
+            background-color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+<h1>Week 5 Tables and forms!</h1>
+<h2>header ex</h2>
+<table>
+    <thead >
+        <tr>
+            <td class="spe">First Name</td>
+            <td class="spe">Last Name</td>
+            <td class="spe">Progam</td>
+
+        </tr>
+    </thead>
+<tbody>
+    <tr>
+        <td>Joel</td>
+        <td>Hanson</td>
+        <td>Bad Ass Prof</td>
+    </tr>
+
+    <tr>
+        <td>Anthony</td>
+        <td>Polazio</td>
+        <td>RA</td>
+    </tr>
+</tbody>
+</table>
+<br>
+<table>
+    <thead >
+        <tr>
+            <td class="spe">Food</td>
+            <td class="spe">1 out of 10 Ranking</td>
+        </tr>
+    </thead>
+<tbody>
+    <tr>
+        <td>Steak</td>
+        <td>9.3/10</td>
+    </tr>
+
+    <tr>
+        <td>Tacos</td>
+        <td>8.7/10</td>   
+    </tr>
+
+    <tr>
+        <td>Oysters</td>
+        <td>7.9/10</td>
+    </tr>
+
+</tbody>    
+</table>
+
+<br>
+<h2>Basic form example</h2>
+<form action="#" nethods="get">
+    <input type="text" name="username" placeholder="Enter Username...">
+    <br>
+    <input type="text" name="password" placeholder="Enter Password">
+    <br>
+    <input type="button" value="Click me lmaoooo!">
+
+</form>
+
+<br>
+<br>
+
+<h2>Example of using a form with table lmao</h2>
+<form action="#" method="get">
+    <table>
+        <thead class="spe">
+            <tr>
+                <td class="spe">Label</td>
+                <td class="spe">Input</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>text input</td>
+                <td><input type="text" name="text-input" required></td>
+            </tr>
+
+            <tr>
+                <td>CheckBox</td>
+                <td><input type="checkbox" name="check" required></td>
+            </tr>
+
+            <tr>
+                <td>Color</td>
+                <td><input type="color" name="color"></td>
+            </tr>
+
+            <tr>
+                <td> Date</td>
+                <td><input type="date" name="date"></td>
+            </tr>
+
+            <tr>
+                <td>File</td>
+                <td><input type="file" name="file"></td>
+            </tr>
+
+            <tr>
+                <td>Time</td>
+                <td><input type="time" name="time"></td>
+            </tr>
+
+            <tr>
+                <td>Radio Button</td>
+                <td>
+                    <label for="yes">Yes: </label>
+                    <input type="radio" name="yes-or-no" id="yes" value="yes">
+                    <br>
+                    <label for="no">No: </label>
+                    <input type="radio" name="yes-or-no" id="no" value="no">
+                    <br>
+                    <label for="maybe">Maybe: </label>
+                    <input type="radio" name="yes-or-no" id="maybe" value="maybe">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Text Area</td>
+                <td><textarea name="message" cols="30" rows="10" placeholder="Enter Some text"></textarea></td>
+            </tr>
+        </tbody>
+    </table>
+
+</form>
+
+
+</body>
+</html>
