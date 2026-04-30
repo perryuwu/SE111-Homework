@@ -1,0 +1,69 @@
+.audiowide-regular {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-image:url(../images/stars.webp);
+    font-family: "Audiowide";
+}
+
+#main-container{
+    color: white;
+    border: 8px solid yellow;
+    width:900px;
+    height: 1900px;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    background-color: black;
+}
+#footer{
+    border-top: 5px solid yellow;
+    text-align: left;
+}
+#nav-pics{
+    gap: 20px;
+    animation-name: moving;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+#nav-pics img{
+    border:3px solid yellow;
+}
+#nav-bar{
+    height:50px;
+    text-align: center;
+    border-top:2px solid yellow;
+    border-bottom:2px solid yellow;
+    padding-top:25px;
+}
+.nav-btn{
+    border: 2px solid yellow;
+    padding:10px;
+}
+.nav-btn:hover{
+    font-size: 20px;
+}
+#mainpic img{
+    border:2px solid yellow;
+
+}
+.character{
+    font-size: 23px;
+    
+}
+@keyframes moving{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.10);
+    }
+}

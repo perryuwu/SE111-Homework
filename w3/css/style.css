@@ -4,10 +4,7 @@ body{
     height: 100vh;
     background-color: blanchedalmond;
     
-    animation-name: perct;
-    animation-duration: 60s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+
 }
 
 #main-container{
