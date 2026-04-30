@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week 6 lab </title>
+</head>
+<body>
+    <script>
+
+        function addNum(x,y){
+        return x + y   
+        }
+        function subNum(x,y){
+        return x - y   
+        }
+        function multNum(x,y){
+        return x * y   
+        }
+        function divNum(x,y){
+        return x / y   
+        }
+        var decision = prompt("Would you like to Add, Multiply, Subtract, or Divide (Please type full word)... ")
+        var num1 = Number(prompt("Please put in your first number "))
+        var num2 = Number(prompt("Please put in your second number "))
+
+
+        if(decision === "Add"){
+            var sum = addNum(num1, num2)
+
+            alert(sum)
+        }
+                if(decision === "Divide"){
+            var sum = divNum(num1, num2)
+
+            alert(sum)
+        }
+                if(decision === "Subtract"){
+            var sum = subNum(num1, num2)
+
+            alert(sum)
+        }
+                if(decision === "Multiply"){
+            var sum = multNum(num1, num2)
+
+            alert(sum)
+        }
+
+        
+    </script>
+</body>
+</html>
