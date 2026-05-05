@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week 6 hw</title>
+</head>
+<body>
+    <script>
+
+        var hourlyP = Number(prompt("What is your hourly pay?"))
+        var hoursW = Number(prompt("How many hours do you get in a week?"))
+        var taxR = Number(prompt("What is your tax rate for your 2 week period?"))
+
+        var grossW = (hourlyP * hoursW) * 2
+        var uncleS = grossW * taxR
+        var netP = grossW - taxR
+
+        alert("Gross Pay: ", grossW, "Uncle Sam's Share: ", uncleS, "Net Pay: ", netP)
+
+        console.log("Gross Pay: ", grossW)
+        console.log("Uncle Sam's Share: ", uncleS)
+        console.log("Net Pay : ", netP)
+
+    </script>
+</body>
+</html>
