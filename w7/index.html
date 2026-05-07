@@ -23,16 +23,18 @@
         var numberText=document.querySelector("#number")
         
         var incrementButton = document.querySelector("#increment")
-        var decrementButoon = document.querySelector("#decrement")
+        var decrementButton = document.querySelector("#decrement")
+
+        var currentNumber = 0
 
         function add(){
             currentNumber++
-            console.log(currentNumber)
+            numberText.innerHTML = currentNumber
         }
 
         function subtract(){
             currentNumber--
-            console.log(currentNumber)
+            numberText.innerHTML = currentNumber
         }
 
         incrementButton.addEventListener("click", add)
