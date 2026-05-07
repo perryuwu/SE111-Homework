@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w7 lmao</title>
+</head>
+<body>
+
+    <h1>more java lmao</h1>
+
+    <br>
+
+    <h2>Current Number</h2>
+
+    <h2 id="number">0</h2>
+
+    <input type="button" id="increment" value="Increment">
+    <input type="button" id="decrement" value="Decrement">
+
+
+    <script>
+        var numberText=document.querySelector("#number")
+        
+        var incrementButton = document.querySelector("#increment")
+        var decrementButoon = document.querySelector("#decrement")
+
+        function add(){
+            currentNumber++
+            console.log(currentNumber)
+        }
+
+        function subtract(){
+            currentNumber--
+            console.log(currentNumber)
+        }
+
+        incrementButton.addEventListener("click", add)
+        decrementButton.addEventListener("click", subtract)
+    </script>
+
+
+
+    
+
+
+    
+</body>
+</html>
