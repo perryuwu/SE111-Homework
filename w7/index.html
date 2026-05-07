@@ -19,6 +19,24 @@
     <input type="button" id="decrement" value="Decrement">
 
 
+    <br>
+    <br>
+    <br>
+    <h2>The Best Joke in the Wolrd </h2>
+
+    <div id="jokeContainer">
+        <div id="theJoke">
+            <h3>Where does the polar bear store its money?</h3>
+        </div>
+
+        <div id="jokeAnswer">
+
+
+        </div>
+        <input type="button" id="giveAnswer" value="Where?">
+    </div>
+
+
     <script>
         var numberText=document.querySelector("#number")
         
@@ -39,6 +57,20 @@
 
         incrementButton.addEventListener("click", add)
         decrementButton.addEventListener("click", subtract)
+
+
+        var answerContainer = document.querySelector("#jokeAnswer")
+        var answerButton = document.querySelector("giveAnswer")
+
+        function giveAnswer(){
+
+            answerContainer.innerHTML += "<h4>The Snow Bank!</h4>"
+
+        
+        }
+
+        answerButton.addEventListener("click",  giveAnswer)
+
     </script>
 
 
