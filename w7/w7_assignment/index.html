@@ -110,7 +110,7 @@
             //create gross, taxAmount, net variables and store corresponding data to them
             //use a tax percentage of 20% (.2)
             var gross = hours * rate
-            var taxAmount = .20
+            var taxAmount = .20 * gross
             var net = gross - taxAmount
 
             //console.log() all three processed values, rounded to the second decimal place
