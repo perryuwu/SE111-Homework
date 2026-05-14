@@ -84,8 +84,8 @@
 
             var fname = document.querySelector("#first").value
             var lname = document.querySelector("#last").value
-            var hours = document.querySelector("#hours").value
-            var rate = document.querySelector("#rate").value
+            var hours = Number(document.querySelector("#hours").value)
+            var rate = Number(document.querySelector("#rate").value)
 
             //console.log() all four values
             
@@ -95,7 +95,7 @@
             console.log(rate)
 
             //add the first and last name values together and store into a new variable called 'full' holding the user's full name
-            var full = fname + lname
+            var full = fname + " " + lname
 
             //console.log() the full name value
             console.log(full)
@@ -109,10 +109,14 @@
 
             //create gross, taxAmount, net variables and store corresponding data to them
             //use a tax percentage of 20% (.2)
-            
+            var gross = hours * rate
+            var taxAmount = .20
+            var net = gross - taxAmount
 
             //console.log() all three processed values, rounded to the second decimal place
-            console.log(.toFixed(2))
+            console.log(gross.toFixed(2))
+            console.log(taxAmount.toFixed(2))
+            console.log(net.toFixed(2))
 
 
             //create a new variable called 'finalMessage' that holds the literal string value of the following, each value on a new line (use <br>): full name, hours worked*, hourly rate*   *--> rounded to the second decimal place 
