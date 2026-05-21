@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Week 9 parents /childern</title>
+</head>
+<body>
+    <!--- The parent-->
+    <div id="testContainer">
+
+        <!---A child-->
+        <p id="someText"> dwadiwandiwandianwdiwaditext or something</p>
+
+        <!--child or siblings-->
+        <input type="button" id="killChild" value="Kill the Child">
+    </div>
+
+    <script>
+        
+        
+        var textToRemove = document.querySelector("#someText")
+
+        var parent = document.querySelector("#testContainer")
+
+        function murderChildrn()
+        {
+            parent.removeChild(textToRemove) 
+        }
+
+        var killChildButton = document.querySelector("#killChild")
+
+        killChildButton.addEventListener("click", murderChildrn)
+
+    </script>
+    
+</body>
+</html>
