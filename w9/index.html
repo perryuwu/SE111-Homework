@@ -10,10 +10,14 @@
     <div id="testContainer">
 
         <!---A child-->
-        <p id="someText"> dwadiwandiwandianwdiwaditext or something</p>
+        <p id="someText">DONT CLICK THE BUTTON PLEASE PLEASE</p>
 
         <!--child or siblings-->
         <input type="button" id="killChild" value="Kill the Child">
+    </div>
+
+    <div id="impregantion">
+
     </div>
 
     <script>
@@ -32,6 +36,16 @@
 
         killChildButton.addEventListener("click", murderChildrn)
 
+
+
+
+        var divToMakePregnant = document.querySelector("#impregantion")
+
+        var seed = document.createElement("p")
+
+        seed.innerHTML += "THANK YOU FOR KEEPING ME ALIVE"
+
+        divToMakePregnant.appendChild(seed)
     </script>
     
 </body>
