@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Week 9 parents /childern</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--- The parent-->
+    <div id="testContainer">
+
+        <!---A child-->
+        <p id="someText">I LOVE DONGS. BIG AND SMALL</p>
+
+        <!--child or siblings-->
+        <input type="button" id="killChild" value="Kill the Child">
+    </div>
+
+    <div id="impregantion">
+
+    </div>
+
+    <hr>
+
+    <h2>Hotdog or Hamburgers</h2> 
+    <div id="grillItem">
+
+        <img id="food" src="hotdog.jpg" style="width: 45%; height: 45%;">
+
+    </div>
+    <br>
+    <input type="button" id="actually" value="i think hamburgers and cheeseburgers are better with fries">
+
+    <script>
+        
+        
+        var textToRemove = document.querySelector("#someText")
+
+        var parent = document.querySelector("#testContainer")
+
+        function murderChildrn()
+        {
+            parent.removeChild(textToRemove) 
+        }
+
+        var killChildButton = document.querySelector("#killChild")
+
+        killChildButton.addEventListener("click", murderChildrn)
+
+
+
+
+        var divToMakePregnant = document.querySelector("#impregantion")
+
+        var seed = document.createElement("p")
+
+        seed.innerHTML += "THANK YOU FOR KEEPING ME ALIVE"
+
+        divToMakePregnant.appendChild(seed)
+
+
+        seed.setAttribute("class", "bigText")
+
+
+        function changeGrillItem(){
+            var foodImage = document.querySelector("#food")
+
+            foodImage.setAttribute("src","hamburger.jpg")
+        }
+
+        var changeFood = document.querySelector("#actually")
+
+        changeFood.addEventListener("click", changeGrillItem)
+    </script>
+    
+</body>
+</html>
